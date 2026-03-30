@@ -1,1 +1,5 @@
+<h2>Results</h2>
 
+{% for r in results %}
+<p>{{r.ign}} vs {{r.opponent_tier}} → {{r.score}} → {{r.result}}</p>
+{% endfor %}
