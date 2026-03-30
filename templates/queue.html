@@ -1,0 +1,11 @@
+<h2>Join Queue</h2>
+
+<form method="POST">
+    <input name="ign" placeholder="Your IGN">
+    <button>Join</button>
+</form>
+
+<h3>Queue:</h3>
+{% for q in queue %}
+<p>{{q.ign}}</p>
+{% endfor %}
