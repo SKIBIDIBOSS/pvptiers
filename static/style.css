@@ -1,0 +1,14 @@
+body {
+    background: #0a0a0a;
+    color: white;
+    font-family: Arial;
+}
+
+a {
+    color: red;
+    margin: 10px;
+}
+
+input, button {
+    margin: 5px;
+}
