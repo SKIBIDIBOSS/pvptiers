@@ -1,0 +1,13 @@
+<h1>PvPTiers Leaderboard</h1>
+
+<a href="/queue">Join Queue</a>
+<a href="/results">Results</a>
+<a href="/high_results">High Results</a>
+<a href="/tester_login">Tester</a>
+<a href="/admin_login">Admin</a>
+
+<hr>
+
+{% for p in players %}
+<p>{{p.name}} | {{p.region}} | {{p.tier}}</p>
+{% endfor %}
