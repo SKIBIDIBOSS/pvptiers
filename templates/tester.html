@@ -1,0 +1,22 @@
+<h2>Tester Panel</h2>
+
+{% for q in queue %}
+<p>{{q.ign}}</p>
+{% endfor %}
+
+<button onclick="openPopup()">Submit Result</button>
+
+<div id="popup" style="display:none;">
+<form method="POST" action="/complete_test">
+    <input name="ign" placeholder="Player IGN">
+    <input name="tier" placeholder="Opponent Tier (LT/HT)">
+    <input name="score" placeholder="Score (0-5)">
+    <button>Submit</button>
+</form>
+</div>
+
+<script>
+function openPopup(){
+    document.getElementById("popup").style.display="block";
+}
+</script>
